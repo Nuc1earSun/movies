@@ -1,0 +1,53 @@
+.card {
+  max-width: 250px;
+  background: var(--color-secondary);
+  border-radius: 0px 0px 12px 12px;
+  padding-bottom: 12px;
+}
+.skeleton {
+  aspect-ratio: 2 / 3;
+  background: gray;
+  animation: pulse linear 1s infinite;
+}
+.wrapper {
+  overflow: hidden;
+}
+.image {
+  transition: scale 0.2s ease-in-out;
+}
+.image:hover {
+  scale: 1.04;
+}
+.star {
+  fill: var(--color-star);
+  width: 13px;
+  height: 13px;
+}
+.container {
+  padding: 0 12px;
+}
+.container_star {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+.title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

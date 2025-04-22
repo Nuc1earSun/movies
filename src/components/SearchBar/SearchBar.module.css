@@ -1,0 +1,19 @@
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.suggestions {
+  position: absolute;
+  background: var(--color-secondary);
+  border-radius: 0px 0px 12px 12px;
+  padding: 12px 0;
+  top: 45px;
+  z-index: 1;
+}
