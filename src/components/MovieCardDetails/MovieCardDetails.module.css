@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.image_wrapper {
+  display: flex;
+  width: 25%;
+}

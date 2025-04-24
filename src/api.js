@@ -3,7 +3,7 @@ export const fetchData = async (url) => {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization: process.env.TMDB_TOKEN,
+      Authorization: import.meta.env.VITE_TMDB_TOKEN,
     },
   };
 

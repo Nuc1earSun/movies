@@ -1,11 +1,15 @@
 import { createSignal } from "solid-js";
 import S from "./MovieCard.module.css";
+import { useNavigate } from "@solidjs/router";
 export function MovieCard(props) {
+  const navigate = useNavigate();
   const { movie } = props;
   const [isLoading, setIsLoading] = createSignal(true);
   const bgImage = `https://image.tmdb.org/t/p/original${movie.poster_path}`;
+  console.log(movie);
+
   return (
-    <li class={S.card}>
+    <li class={S.card} on:click={() => navigate(`/${movie.id}`)}>
       <div>
         <div
           style={isLoading() ? {} : { display: "none" }}
